@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(75, 90, 91);
+      }
+    </style>
+  </head>
+  <body>
+    <input id="cislo" type="number" />
+
+    <button id="cudlik">potvrdit</button>
+    <p id="zprava"></p>
+
+    <script>
+      let input = document.getElementById("cislo");
+      let button = document.getElementById("cudlik");
+      let zprava = document.getElementById("zprava");
+      // zprava.textContent = "Jupi";
+
+      let nahodne_cislo = undefined;
+
+      button.addEventListener("click", function () {
+        console.log("kliknuls " + x);
+        x += 1;
+      });
+    </script>
+  </body>
+</html>
