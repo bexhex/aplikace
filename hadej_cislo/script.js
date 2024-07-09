@@ -3,12 +3,9 @@ let button = document.getElementById("cudlik");
 let zprava = document.getElementById("zprava");
 
 let nahodne_cislo = getRandomNumber();
-// zprava.textContent = nahodne_cislo;
-// zprava.style.color = "yellow";
 
 button.addEventListener("click", vyhodnot);
 document.addEventListener("keydown", function (e) {
-  // console.log(e)
   if (e.code == "Enter") {
     vyhodnot();
   }
@@ -22,22 +19,24 @@ function getRandomNumber() {
 
 function vyhodnot() {
   let user_number = Number(input.value);
-  // button.innerText = "neco";
+
   input.value = "";
   input.focus();
-  //   console.log(user_number);
+
   if (user_number < 1 || user_number > 100) {
     zprava.textContent = "jsi idiot";
     zprava.style.color = "red";
     return;
   }
+
   if (user_number < nahodne_cislo) {
-    zprava.textContent = "cislo je vetsi";
+    zprava.textContent = user_number + " ... cislo je vetsi";
     zprava.style.color = "red";
     return;
   }
+
   if (user_number > nahodne_cislo) {
-    zprava.textContent = "cislo je mensi";
+    zprava.textContent = user_number + " ... cislo je mensi";
     zprava.style.color = "red";
     return;
   }
