@@ -1,3 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
 body {
-    background-color: rgb(75, 90, 91);
-  }
+  margin: 0;
+  min-height: 50vh;
+  background-color: rgb(149, 132, 57);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* border: 1px solid red; */
+}
+
+.rd {
+  border: 1px solid red;
+}
+
+.velky_box {
+  /* border: 1px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.maly_box {
+  border: 1px solid rgb(112, 8, 76);
+  background-color: rgba(78, 45, 62, 0.333);
+  border-radius: 8px;
+  padding: 0.8rem;
+}
+
+.lilita {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nadpis {
+  color: rgb(87, 2, 26);
+  font-size: 1.5rem;
+}
+
+#cudlik {
+  color: rgb(247, 237, 241);
+  background-color: rgba(190, 172, 155, 0.578);
+  border: 1px solid rgb(255, 0, 89);
+  border-radius: .4rem;
+  padding: .2rem 0.8rem;
+  transition: all 0.3s;
+}
+
+#cudlik:hover {
+  background-color: rgba(231, 208, 187, 0.578);
+  border: 1px solid rgb(255, 0, 89);
+}
+
+#cislo {
+  border: 3px solid rgb(82, 0, 14);
+  border-radius: .4rem;
+  margin-right: 1rem;
+  padding: .2rem 0.8rem;
+  outline: none;
+  transition: border 0.3s;
+}
+
+#cislo:hover {
+  border: 3px solid rgb(250, 9, 49);
+  
+}
+
+#cislo:focus {
+  border: 3px solid rgb(250, 230, 9);
+
+}
