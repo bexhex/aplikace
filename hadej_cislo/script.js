@@ -25,24 +25,24 @@ function vyhodnot() {
 
   if (user_number < 1 || user_number > 100) {
     zprava.textContent = "jsi idiot";
-    zprava.style.color = "red";
+    zprava.style.color = "#00edff";
     return;
   }
 
   if (user_number < nahodne_cislo) {
     zprava.textContent = user_number + " ... cislo je vetsi";
-    zprava.style.color = "red";
+    zprava.style.color = "#e7e05a";
     return;
   }
 
   if (user_number > nahodne_cislo) {
     zprava.textContent = user_number + " ... cislo je mensi";
-    zprava.style.color = "red";
+    zprava.style.color = "#e7e05a";
     return;
   }
 
   zprava.textContent = "yeesss";
-  zprava.style.color = "limegreen";
+  zprava.style.color = "#4eff4e";
   alert("vyhrals");
   nahodne_cislo = getRandomNumber();
 
