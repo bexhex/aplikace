@@ -3,7 +3,7 @@ const button = document.getElementById("cudlik");
 const zprava = document.getElementById("zprava");
 const life_element = document.getElementById("zivoty");
 
-const MAX_LIFE = 3;
+const MAX_LIFE = 7;
 let nahodne_cislo;
 let zivoty;
 
